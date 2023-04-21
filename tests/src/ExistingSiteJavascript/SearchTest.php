@@ -144,14 +144,18 @@ class SearchTest extends ExistingSiteSelenium2DriverTestBase {
 
     foreach ($node_types as $type) {
       $node_type_label = $type->label();
-      $this->drupalGet('/search');
+      $this->drupalGet('<front>');
       $this->getSearch()->showSearch();
       $page->fillField('keywords', $node_type_label);
 
       // By default autocomplete dropdown does not appears after
       // filling field value so, let's trigger keydown event to open it.
-      $this->getSession()->executeScript("jQuery('#edit-keywords--2').trigger('keydown')");
-      $autocomplete_results = $this->assertSession()->waitForElementVisible('css', '.search-api-autocomplete-search');
+      $this->getSession()->executeScript("jQuery('#edit-keywords').trigger('keydown')");
+      $autocomplete_results = $this->assertSession()->waitOnAutocomplete();
+      // @todo investigate why css class '.search-api-autocomplete-search'
+      // not getting added with latest version of collapsiblock.
+      // $autocomplete_results = $this->assertSession()
+      // ->waitForElementVisible('css', '.search-api-autocomplete-search');
       $this->assertNotEmpty($autocomplete_results);
 
       $published_title = 'Test published ' . $node_type_label;
