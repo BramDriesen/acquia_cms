@@ -19,7 +19,7 @@ use weitzman\DrupalTestTraits\ExistingSiteBase;
 class InstallStateTest extends ExistingSiteBase {
 
   use MediaTestTrait {
-    createMedia as traitCreateMedia;
+    MediaTestTrait::createMedia as traitCreateMedia;
   }
 
   /**
