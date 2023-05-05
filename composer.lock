@@ -2473,10 +2473,10 @@
             "dist": {
                 "type": "path",
                 "url": "./modules/acquia_cms_audio",
-                "reference": "49efdf7b6e7cc1d3d7a72f560e4d5798b47ce987"
+                "reference": "26327066b33d8ed59c5ec0efa8c5ec56d7700cf4"
             },
             "require": {
-                "drupal/acquia_cms_common": "1.x-dev || 2.x-dev",
+                "drupal/acquia_cms_common": "1.x-dev || 2.x-dev || 3.x-dev",
                 "drupal/media_entity_soundcloud": "^3.1"
             },
             "type": "drupal-module",
@@ -2902,7 +2902,7 @@
             "dist": {
                 "type": "path",
                 "url": "./modules/acquia_cms_search",
-                "reference": "cc669fcd01ec8c7f63f21cb6b1de381fdcde5a3c"
+                "reference": "6c38fb66f4d310903752683e4745e1429b72dd08"
             },
             "require": {
                 "cweagans/composer-patches": "^1.7",
@@ -2944,12 +2944,12 @@
             "dist": {
                 "type": "path",
                 "url": "./modules/acquia_cms_site_studio",
-                "reference": "4667a8a03bee1cea08e508ce4123654f5783cd5c"
+                "reference": "b4587698b9b941ae3a8f670dd7fe2cb916bb14dd"
             },
             "require": {
                 "acquia/cohesion": "^6.9.2 || ^7.0",
                 "acquia/cohesion-theme": "^6.9 || ^7.0",
-                "drupal/acquia_cms_common": "1.x-dev || 2.x-dev",
+                "drupal/acquia_cms_common": "1.x-dev || 2.x-dev || 3.x-dev",
                 "drupal/collapsiblock": "^4.0",
                 "drupal/node_revision_delete": "^1.0"
             },
