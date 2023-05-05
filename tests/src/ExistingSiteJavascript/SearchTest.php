@@ -152,10 +152,7 @@ class SearchTest extends ExistingSiteSelenium2DriverTestBase {
       // filling field value so, let's trigger keydown event to open it.
       $this->getSession()->executeScript("jQuery('#edit-keywords').trigger('keydown')");
       $autocomplete_results = $this->assertSession()->waitOnAutocomplete();
-      // @todo investigate why css class '.search-api-autocomplete-search'
-      // not getting added with latest version of collapsiblock.
-      // $autocomplete_results = $this->assertSession()
-      // ->waitForElementVisible('css', '.search-api-autocomplete-search');
+      $autocomplete_results = $this->assertSession()->waitForElementVisible('css', '.search-api-autocomplete-search');
       $this->assertNotEmpty($autocomplete_results);
 
       $published_title = 'Test published ' . $node_type_label;

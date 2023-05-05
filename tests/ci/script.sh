@@ -15,9 +15,6 @@ cd "$(dirname "$0")"
 source ../../../orca/bin/travis/_includes.sh
 
 if [ "${ACMS_JOB}" != "backstop_tests" ] && [ "${ACMS_JOB}" != "upgrade_modules" ]; then
-  # Add slide-element library locally
-  cd docroot/libraries && mkdir slide-element && cd slide-element
-  curl -o index.umd.js https://unpkg.com/slide-element@2.3.1/dist/index.umd.js
   # Run ORCA's standard script.
   ../../../orca/bin/travis/script.sh
 fi
