@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d50b76b28a63d477785cf89bc328298a",
+    "content-hash": "4640de33a162c5547c7a29b55e7c2f4d",
     "packages": [
         {
             "name": "acquia/acquia-cms-starterkit",
@@ -2493,7 +2493,7 @@
             "dist": {
                 "type": "path",
                 "url": "./modules/acquia_cms_common",
-                "reference": "56597a828916f8bffec965763209cd0d3c5f0185"
+                "reference": "63e20d8ad15b416c778143b828aaeda609ffbc89"
             },
             "require": {
                 "acquia/drupal-environment-detector": "^1.5",
@@ -2930,7 +2930,7 @@
             "dist": {
                 "type": "path",
                 "url": "./modules/acquia_cms_site_studio",
-                "reference": "6b11bacd1bbc42302d785950b904a8a832df2ecc"
+                "reference": "8b0249f549588a8b3e1041753a6632d449e34fc0"
             },
             "require": {
                 "acquia/cohesion": "^6.9.2 || ^7.0",
