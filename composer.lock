@@ -83,16 +83,16 @@
         },
         {
             "name": "acquia/cohesion",
-            "version": "7.0.4",
+            "version": "7.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/cohesion.git",
-                "reference": "58ceb44edb4619177286680d3cac00cea05fc5a7"
+                "reference": "168c483f2a514a771d9f51be7834f52cc852338e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/cohesion/zipball/58ceb44edb4619177286680d3cac00cea05fc5a7",
-                "reference": "58ceb44edb4619177286680d3cac00cea05fc5a7",
+                "url": "https://api.github.com/repos/acquia/cohesion/zipball/168c483f2a514a771d9f51be7834f52cc852338e",
+                "reference": "168c483f2a514a771d9f51be7834f52cc852338e",
                 "shasum": ""
             },
             "require": {
@@ -145,9 +145,9 @@
             ],
             "description": "Site Studio",
             "support": {
-                "source": "https://github.com/acquia/cohesion/tree/7.0.4"
+                "source": "https://github.com/acquia/cohesion/tree/7.1.0"
             },
-            "time": "2023-03-21T16:17:09+00:00"
+            "time": "2023-05-02T15:17:47+00:00"
         },
         {
             "name": "acquia/cohesion-theme",
@@ -2930,7 +2930,7 @@
             "dist": {
                 "type": "path",
                 "url": "./modules/acquia_cms_site_studio",
-                "reference": "eb1940f5b68a9c7e99312c818a782b970e3de3e5"
+                "reference": "6b11bacd1bbc42302d785950b904a8a832df2ecc"
             },
             "require": {
                 "acquia/cohesion": "^6.9.2 || ^7.0",
@@ -2962,7 +2962,7 @@
                 "patches": {
                     "acquia/cohesion": {
                         "3340269 - Site Studio: Allow optional packages to import": "https://www.drupal.org/files/issues/2023-03-16/3340269-site-studio-allow-optional-packages-6.patch",
-                        "2571235 - Roles should depend on objects that are building the granted permissions": "https://www.drupal.org/files/issues/2023-04-26/allow-site-studio-dynamic-permissions.patch"
+                        "2571235 - Roles should depend on objects that are building the granted permissions": "https://www.drupal.org/files/issues/2023-05-09/3340269-acquia_cms_site_studio-allow-site-studio-dynamic-permissions-10.patch"
                     }
                 }
             },
