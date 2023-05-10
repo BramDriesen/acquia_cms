@@ -37,13 +37,8 @@
         }
     },
     "extra": {
-        "branch-alias" : {
-            "dev-develop" : "1.x-dev"
-        },
-        "drupal-scaffold": {
-            "file-mapping": {
-                "[web-root]/drush/Commands/ConfigImportExportCommands.php": "modules/acquia_cms_site_studio_cm/assets/scaffold/files/ConfigImportExportCommands.php"
-            }
+        "branch-alias": {
+            "dev-develop": "1.x-dev"
         },
         "drush": {
             "services": {
