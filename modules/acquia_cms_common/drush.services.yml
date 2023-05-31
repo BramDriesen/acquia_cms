@@ -14,6 +14,25 @@ services:
     arguments: ['@module_handler','@logger.factory', '@keyvalue', '@acquia_cms_common.utility']
     tags:
       - { name: drush.command }
+  config.import.commands:
+    class: \Drush\Commands\config\ConfigImportCommands
+    arguments:
+      - '@config.manager'
+      - '@config.storage'
+      - '@cache.config'
+      - '@module_handler'
+      - '@event_dispatcher'
+      - '@lock'
+      - '@config.typed'
+      - '@module_installer'
+      - '@theme_handler'
+      - '@string_translation'
+      - '@extension.list.module'
+    calls:
+      - [setImportTransformer, ['@?config.import_transformer']]
+      - [setConfigStorageSync, ['@?config.storage.sync']]
+    tags:
+      -  { name: drush.command }
   acquia_cms_common.config_commands:
     class: 'Drupal\acquia_cms_common\Commands\AcmsConfigImportCommands'
     arguments:

@@ -13,9 +13,9 @@ use Drupal\Core\Config\StorageInterface;
 use Drupal\Core\DependencyInjection\ClassResolver;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\StringTranslation\TranslationInterface;
+use Drush\Commands\config\ConfigCommands;
+use Drush\Commands\config\ConfigImportCommands;
 use Drush\Commands\DrushCommands;
-use Drush\Drupal\Commands\config\ConfigCommands;
-use Drush\Drupal\Commands\config\ConfigImportCommands;
 use Drush\Exceptions\UserAbortException;
 use Symfony\Component\Console\Question\ChoiceQuestion;
 
@@ -53,7 +53,7 @@ final class AcmsConfigImportCommands extends DrushCommands {
   /**
    * The standard drush config import commands.
    *
-   * @var \Drush\Drupal\Commands\config\ConfigImportCommands
+   * @var \Drush\Commands\config\ConfigImportCommands
    */
   protected $configImportCommands;
 
@@ -120,7 +120,7 @@ final class AcmsConfigImportCommands extends DrushCommands {
    *
    * @param \Drupal\Core\Config\StorageInterface $configStorage
    *   The StorageInterface.
-   * @param \Drush\Drupal\Commands\config\ConfigImportCommands $configImportCommands
+   * @param \Drush\Commands\config\ConfigImportCommands $configImportCommands
    *   The config importer class.
    * @param \Drupal\Core\StringTranslation\TranslationInterface $stringTranslation
    *   The TranslationInterface.
