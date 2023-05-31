@@ -179,7 +179,9 @@ jobs:
           echo "CHROMEDRIVER_PID=${CHROMEDRIVER_PID}" >> ${GITHUB_ENV}
       - name: Install
         shell: 'script -q -e -c "bash {0}"'
-        run: ./tests/ci/install.sh
+        run: |
+          curl https://gist.githubusercontent.com/rajeshreeputra/ec8ed19ba135868e0c19f5b9067de7e3/raw/e35ff883a984be16d67cac2b32de103439a90d5f/drupal-recommended-setting-drush-12-support.patch  | git -C ../orca apply
+          ./tests/ci/install.sh
       - name: Before script
         run: ../orca/bin/ci/before_script.sh
       - name: Script
